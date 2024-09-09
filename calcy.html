@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            background-color: rgb(3, 3, 93);
+            text-align: center;
+            justify-content: center;
+        }
+        .display{
+            text-align: right;
+            height: 70px;
+            width: 300px;
+        }
+        .main{
+            text-align: center;
+            background-color: white;
+            width: 300px;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 20px;
+            background-color: white;
+        }
+        .btn{
+            padding: 5px;
+            margin: 3px;
+            border-radius: 10px;
+            height: 42px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            font-size: larger;
+            border: solid 2px;
+            border-color: aqua;
+            box-shadow: 5px 5px 5px aqua;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="display" style="width: fit-content;">
+        <input id="display"type="input" style="height: 50px; width: 420px;margin-left: 20px;margin-bottom: 20px;margin-top: 20px; text-align: right; font-size: 40px; border-radius: 10px; border:solid; border-color: aqua;border-width: 3px;">
+    </div>
+    <div class="main">
+        <button class="btn" onclick="clearDisplay()">C</button>
+        <button class="btn" onclick="addToDisplay('%')">%</button>
+        <button class="btn" onclick="calculateResult()">enter</button>
+        <button class="btn" onclick="addToDisplay('/')">/</button>
+    <br>
+        <button class="btn" onclick="addToDisplay('7')">7</button>
+        <button class="btn" onclick="addToDisplay('8')">8</button>
+        <button class="btn" onclick="addToDisplay('9')">9</button>
+        <button class="btn" onclick="addToDisplay('*')">*</button>
+    <br>
+        <button class="btn" onclick="addToDisplay('4')">4</button>
+        <button class="btn" onclick="addToDisplay('5')">5</button>
+        <button class="btn" onclick="addToDisplay('6')">6</button>
+        <button class="btn" onclick="addToDisplay('-')">-</button>
+    <br>
+        <button class="btn" onclick="addToDisplay('1')">1</button>
+        <button class="btn" onclick="addToDisplay('2')">2</button>
+        <button class="btn" onclick="addToDisplay('3')">3</button>
+        <button class="btn" onclick="addToDisplay('+')">+</button>
+    <br>
+        <button class="btn" onclick="addToDisplay('00')">00</button>
+        <button class="btn" onclick="addToDisplay('0')">0</button>
+        <button class="btn" onclick="addToDisplay('.')">.</button>
+        <button class="btn" onclick="calculateResult()">=</button>
+    </div>
+</div>
+<script>
+    function addToDisplay(value) {
+        document.getElementById("display").value += value;
+    }
+
+    function clearDisplay() {
+        document.getElementById("display").value = "";
+    }
+
+    function calculateResult() {
+        try {
+            document.getElementById("display").value = eval(document.getElementById("display").value);
+        } catch (error) {
+            document.getElementById("display").value = "Error";
+        }
+    }
+</script>
+</body>
+</html>
