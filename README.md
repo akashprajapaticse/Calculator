@@ -1,76 +1,107 @@
-# Modern Calculator
+### **Updated README.md** for Calculator (HTML + CSS + JavaScript)
 
-A sleek and responsive calculator built using HTML, CSS, and JavaScript. This calculator features a modern glassmorphism-inspired design and supports basic arithmetic operations.
+```markdown
+# 🧮 Simple Calculator
 
----
-
-## 🚀 Features
-✅ Clean and modern UI with a glassmorphism effect  
-✅ Basic arithmetic operations: addition, subtraction, multiplication, division, and percentage  
-✅ Responsive design — works on all screen sizes  
-✅ Keyboard-friendly — supports `Enter` for calculation  
-✅ Hover and click animations for enhanced user experience  
+A responsive and visually appealing calculator built using **HTML**, **CSS**, and **JavaScript**. It supports basic arithmetic operations like addition, subtraction, multiplication, division, and percentage calculations. The UI is modern with color-coded buttons and a clean, gradient background for a better user experience. 🚀
 
 ---
 
-## 📸 Screenshot
-![Calculator Screenshot](./screenshot.png)
+## 📌 **Features**
+✅ Basic arithmetic operations (+, -, *, /)  
+✅ Percentage calculation  
+✅ Clean and responsive design  
+✅ Modern button styling with hover and click effects  
+✅ 'Enter' button for quick calculation  
+✅ 'C' button for clearing the display  
 
 ---
 
-## 🏗️ Technologies Used
-- HTML5  
-- CSS3 (Flexbox, Grid, Glassmorphism)  
-- JavaScript (Vanilla)  
+## 📸 **Screenshot**
+![Calculator](./screenshot.png)
 
 ---
 
-## 🔨 How to Use
-1. Clone the repository:  
+## 🛠️ **Tech Stack**
+- **HTML** – Structure  
+- **CSS** – Styling and layout  
+- **JavaScript** – Logic and interactivity  
+
+---
+
+## 📂 **Folder Structure**
+```
+├── calcy.html              # Main HTML file
+├── screenshot.png          # Screenshot of calculator
+├── README.md               # Project documentation
+```
+
+---
+
+## 🚀 **Setup and Usage**
+### ✅ **1. Clone the repository**:
 ```bash
-git clone https://github.com/akashprajapaticse/calculator.git
-```
-2. Navigate to the project folder:  
-```bash
-cd calculator
-```
-3. Open `calcy.html` in your browser:
-```bash
-start calcy.html
+git clone https://github.com/akashprajapaticse/Calculator.git
 ```
 
----
+### ✅ **2. Open the HTML file**:
+- Open `calcy.html` directly in your browser.  
 
-## 💡 Functionality
-| Button | Functionality |
-|--------|---------------|
-| `C`     | Clear the display |
-| `%`     | Calculate percentage |
-| `/` `*` `-` `+` | Arithmetic operators |
-| `=`     | Display the result |
-| `Enter` | Also displays the result |
-| `00`, `0-9`, `.` | Input numbers and decimal |
+### ✅ **3. Usage**:
+1. Enter numbers using the buttons.  
+2. Use `+`, `-`, `*`, `/`, and `%` for operations.  
+3. Click `=` or `Enter` to calculate the result.  
+4. Use `C` to clear the input.  
 
 ---
 
-## ✅ To-Do List
-- [ ] Add scientific calculator features  
-- [ ] Improve mobile responsiveness  
-- [ ] Enhance keyboard support  
+## 🎯 **How It Works**
+1. `addToDisplay()` – Appends the input value to the display.  
+2. `clearDisplay()` – Clears the display value.  
+3. `calculateResult()` – Uses `eval()` to compute the entered expression.  
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to fork this repo and submit a pull request.  
+## 🚦 **Troubleshooting**
+❗ **No Output**  
+- Ensure that JavaScript is enabled in your browser.  
+- Open browser console (F12) to check for errors.  
+
+❗ **Incorrect Result**  
+- Ensure proper input format (e.g., no division by zero).  
 
 ---
 
-## 🏆 Author
-**Akash Prajapati**  
-📧 [akash.prajapati.cse@gmail.com](mailto:akash.prajapati.cse@gmail.com)  
+## 🌟 **Contributing**
+1. Fork the repository.  
+2. Create a new branch (`git checkout -b feature-name`).  
+3. Make your changes and commit (`git commit -m 'Add new feature'`).  
+4. Push to the branch (`git push origin feature-name`).  
+5. Create a pull request.  
 
 ---
 
-## 📄 License
-This project is licensed under the **MIT License**.  
+## 📜 **License**
+This project is licensed under the **MIT License**.
+
+---
+
+## 👤 **Author**
+👤 **Akash Prajapati** - [GitHub](https://github.com/akashprajapaticse)
+
+---
+
+## ⭐ **Show Your Support**
+If you like this project, give it a ⭐ on GitHub!
 ```
+
+---
+
+### ✅ **Changes:**
+- Added screenshot reference  
+- Enhanced description  
+- Updated feature list and setup instructions  
+
+---
+
+Let me know if you need more updates! 😎
