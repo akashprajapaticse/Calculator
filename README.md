@@ -1,6 +1,3 @@
-### **Updated README.md** for Calculator (HTML + CSS + JavaScript)
-
-```markdown
 # 🧮 Simple Calculator
 
 A responsive and visually appealing calculator built using **HTML**, **CSS**, and **JavaScript**. It supports basic arithmetic operations like addition, subtraction, multiplication, division, and percentage calculations. The UI is modern with color-coded buttons and a clean, gradient background for a better user experience. 🚀
